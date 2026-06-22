@@ -1,63 +1,160 @@
-# 📝 To-Do List Application (C)
+<img width="1456" height="720" alt="To-Do List Application" src="https://github.com/user-attachments/assets/c6aebfbf-a936-4f19-a554-461cb1504263" />
 
-A simple command-line **To-Do List** application written in C that demonstrates basic file handling operations. This project is ideal for beginners looking to understand file I/O in C through a practical use case.
+# 📝 To-Do List Application
 
----
-
-## 🚀 Features
-
-- ✅ Create a new To-Do list
-- 📄 View existing tasks
-- ➕ Add tasks to the list
-- ❌ Delete the entire list
-- 🔚 Exit the program
+A lightweight **command-line To-Do List application** developed in **C** that demonstrates fundamental file handling concepts through a simple task management system. The application provides an interactive menu-driven interface for creating, viewing, and managing a personal to-do list.
 
 ---
 
-## 📂 Repository Structure
+## 📖 Project Overview
+
+The To-Do List Application is designed as a beginner-friendly project to illustrate the use of **file handling**, **functions**, **conditional statements**, and **menu-driven programming** in C. Tasks are stored in a local text file, allowing users to save and retrieve their to-do items between program executions.
+
+This project serves as a practical introduction to C programming concepts and file input/output (I/O) operations.
+
+---
+
+## ✨ Features
+
+* 📝 Create a new To-Do list
+* ➕ Add new tasks
+* 📄 View all saved tasks
+* 🗑 Delete the entire To-Do list
+* 💾 Store tasks using file handling
+* 📂 Persistent data storage with text files
+* 🔄 Interactive menu-driven interface
+* 🚪 Exit the application safely
+
+---
+
+## 📂 Project Structure
+
+```text
 kozhukkatta/
 └── to-do/
-├── todo.c # Main C source file
-└── README.md # Project documentation
-
+    ├── todo.c        # Main source code
+    ├── text.txt      # Task storage file (generated automatically)
+    └── README.md     # Project documentation
+```
 
 ---
 
-## 🛠 Compilation & Execution
+## 🛠 Technology Stack
 
-### ✅ Compile
+| Category                 | Technology                                                            |
+| ------------------------ | --------------------------------------------------------------------- |
+| **Programming Language** | C                                                                     |
+| **Compiler**             | GCC                                                                   |
+| **Storage**              | Text File (`text.txt`)                                                |
+| **Concepts Used**        | File Handling, Functions, Loops, Switch Statements, Conditional Logic |
+| **Interface**            | Command Line (CLI)                                                    |
+
+---
+
+## ⚙️ Compilation & Execution
+
+### Compile
 
 ```bash
 gcc todo.c -o todo
+```
 
+### Run
 
- Program Logic Overview
-----------------------
-The list is stored in a local file named text.txt.
+**Linux / macOS**
 
-Tasks can be entered one by one and terminated using the word done.
+```bash
+./todo
+```
 
-Menu-driven structure using a switch statement for easy interaction.
+**Windows**
 
-⚠️ Limitations
-Only one list is maintained via text.txt
+```bash
+todo.exe
+```
 
-Cannot edit or delete individual items
+---
 
-No task completion status support
+## 📋 Program Workflow
 
-Limited to 100 characters per line
+The application follows a simple menu-driven interface:
 
-🔧 Future Enhancements
- Mark tasks as completed
+1. Create a new To-Do list
+2. View existing tasks
+3. Add new tasks
+4. Delete the To-Do list
+5. Exit the application
 
- Edit or remove individual entries
+Tasks are entered one at a time and can be terminated using the keyword:
 
- Support for multiple lists/users
+```text
+done
+```
 
- GUI-based version using C/C++ frameworks
+All tasks are automatically saved to **text.txt** for future access.
 
-👤 Author
-Pauljo George
-Project: kozhukkatta/to-do
+---
 
+## 🧠 Concepts Demonstrated
+
+* File Handling (`fopen`, `fclose`, `fprintf`, `fgets`)
+* Functions
+* Loops
+* Switch-Case Statements
+* String Manipulation
+* User Input Handling
+* Command-Line Programming
+
+---
+
+## ⚠️ Current Limitations
+
+* Supports only a single To-Do list
+* Stores tasks in a single text file (`text.txt`)
+* Individual tasks cannot be edited or deleted
+* No task completion status
+* Maximum task length is limited
+
+---
+
+## 🚀 Future Enhancements
+
+* ✅ Mark tasks as completed
+* ✏️ Edit existing tasks
+* 🗑 Delete individual tasks
+* 📅 Add due dates and priorities
+* 🔍 Search tasks
+* 👥 Support multiple users
+* 📂 Multiple To-Do lists
+* 🎨 GUI version using C/C++ frameworks
+* 💾 Database integration
+
+---
+
+## 📚 Learning Objectives
+
+This project demonstrates practical implementation of:
+
+* File Input/Output (I/O)
+* Basic Data Persistence
+* Menu-Driven Programming
+* Procedural Programming in C
+* Command-Line Application Development
+
+---
+
+## 👨‍💻 Author
+
+**Pauljo George**
+
+A beginner-friendly C project created to practice file handling and command-line application development.
+
+---
+
+## 📄 License
+
+This project is intended for educational and learning purposes. Feel free to use, modify, and enhance it for your own learning or academic projects.
+
+---
+
+### ⭐ If you found this project useful, consider giving it a star on GitHub!
